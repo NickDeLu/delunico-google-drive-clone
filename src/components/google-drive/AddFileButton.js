@@ -106,7 +106,7 @@ export default function AddFileButton({currentFolder}) {
                     }}    
                 >   
                 {uploadingFiles.map(file => (
-                    <Toast key={file.id} onClose={()=>{
+                    <Toast key={file.id} onClose={ ()=>{
                         setUploadingFiles(prevUploadingFiles =>{
                             return prevUploadingFiles.filter(uploadFile => {
                                 return uploadFile.id !== file.id
