@@ -15,7 +15,7 @@ export default function Dashboard() {
     const { folder, childFolders, childFiles } = useFolder(folderId, state.folder)
 
     return (
-        <>
+        <div className="zoom">
         <Navbar />
         <Container fluid>
             <div className="d-flex align-items-center p-2">
@@ -35,7 +35,7 @@ export default function Dashboard() {
 
                 </div>
             )}
-            {childFolders.length > 0 && childFiles.length > 0 && <hr></hr>}
+            {childFolders.length > 0 && childFiles.length > 0 && (<><hr></hr><div className="mx-2">Files</div></>)}
             {childFiles.length > 0 && (
                 <div className="d-flex flex-wrap">
 
@@ -49,6 +49,6 @@ export default function Dashboard() {
                 </div>
             )}
         </Container>
-         </>
+         </div>
     )
 }

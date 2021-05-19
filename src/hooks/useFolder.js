@@ -99,7 +99,7 @@ export function useFolder(folderId = null, folder = null){
         return database.files
         .where("folderId","==",folderId)
         .where("userId","==", currentUser.uid) 
-        // .orderBy("createdAt")
+        .orderBy("createdAt")
         //when new file is added to db
         .onSnapshot(snapshot =>{
             dispatch({
