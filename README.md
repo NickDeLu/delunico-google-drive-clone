@@ -1,4 +1,4 @@
-# https://delunico-google-drive-clone.herokuapp.com/
+# https://delunico-drive.netlify.app/
 
 A React.js web app that implements file storage from the google firebase API with user authentication. File directories can store uploaded files saved to your account and can later be downloaded.
 
